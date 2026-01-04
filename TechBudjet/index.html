@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Budget – PC & Setup</title>
+  <style>
+    :root{
+      --bg:#0f1220; --card:#161a35; --accent:#6cf2c2; --text:#e8ebff; --muted:#aab0ff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;color:var(--text);background:linear-gradient(180deg,#0b0e1a, #0f1220)}
+    header{position:sticky;top:0;background:rgba(15,18,32,.85);backdrop-filter:blur(8px);border-bottom:1px solid #232865}
+    .wrap{max-width:1100px;margin:auto;padding:16px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.5px}
+    .logo span{color:var(--accent)}
+    nav a{color:var(--text);text-decoration:none;margin-left:14px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    .hero{padding:64px 16px}
+    .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .badge{display:inline-block;background:#1e2350;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700}
+    h1{font-size:clamp(28px,4vw,42px);margin:12px 0}
+    p{color:var(--muted);line-height:1.6}
+    .card{background:var(--card);border:1px solid #232865;border-radius:16px;padding:18px}
+    .cta{display:inline-block;margin-top:14px;background:var(--accent);color:#0b0e1a;padding:12px 16px;border-radius:12px;font-weight:800;text-decoration:none}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid h3{margin:8px 0}
+    .grid a{color:var(--accent);text-decoration:none;font-weight:700}
+
+    article{background:var(--card);border:1px solid #232865;border-radius:16px;padding:24px;margin:24px 0}
+    article h2,h3{color:var(--accent)}
+    article ul{margin-left:20px}
+
+    footer{border-top:1px solid #232865;margin-top:48px}
+    footer p{font-size:14px}
+
+    img{max-width:100%;border-radius:12px;margin:12px 0}
+
+    @media(max-width:900px){
+      .hero .wrap{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="logo">Tech<span>Budget</span></div>
+        <div>
+          <a href="#pc">PC Gamer</a>
+          <a href="#ecrans">Écrans</a>
+          <a href="#accessoires">Accessoires</a>
+          <a href="#guides">Guides</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="badge">Tech utile & budget</span>
+        <h1>Choisir le bon PC et le bon setup sans se ruiner</h1>
+        <p>Guides clairs, comparatifs honnêtes et conseils pratiques pour débuter en gaming et en tech.</p>
+        <a class="cta" href="#guides">Voir les guides</a>
+      </div>
+      <div class="card">
+        <h3>Dernier guide</h3>
+        <p><strong>Quel PC gamer pour 900 € en 2025</strong><br/>Performances, composants et erreurs à éviter.</p>
+        <a href="#article1">Lire l’article →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="grid">
+      <div class="card" id="pc">
+        <h3>PC Gamer</h3>
+        <p>Configs équilibrées, FPS réels, choix CPU/GPU.</p>
+        <a href="#article1">Explorer →</a>
+      </div>
+      <div class="card" id="ecrans">
+        <h3>Écrans</h3>
+        <p>144/180 Hz, 1080p vs 1440p, dalles.</p>
+        <a href="#article2">Comparer →</a>
+      </div>
+      <div class="card" id="accessoires">
+        <h3>Accessoires</h3>
+        <p>Souris, claviers, casques au meilleur rapport qualité/prix.</p>
+        <a href="#article3">Découvrir →</a>
+      </div>
+    </div>
+  </section>
+
+  <article id="article1">
+    <h2>Quel PC gamer pour 900 € en 2025 ?</h2>
+    <p>Choisir un PC gamer abordable en 2025 peut sembler compliqué, mais je vais te guider pas à pas pour que tu obtiennes le meilleur rapport qualité/prix sans te ruiner.</p>
+    <h3>1. Objectifs et usage</h3>
+    <p>Pour Fortnite, GTA, Warzone ou d’autres jeux populaires, vise un PC capable de fournir au moins 60 à 144 FPS. Le GPU et le CPU doivent être équilibrés pour éviter les goulots d’étranglement.</p>
+    <h3>2. Composants recommandés</h3>
+    <ul>
+      <li><strong>CPU :</strong> Intel Core i5-12400F ou Ryzen 5 5600</li>
+      <li><strong>GPU :</strong> RTX 4060 ou RX 7600</li>
+      <li><strong>RAM :</strong> 16 Go DDR4</li>
+      <li><strong>Stockage :</strong> SSD 1 To</li>
+      <li><strong>Boîtier / Alimentation :</strong> Corsair 3000D Airflow, 650W</li>
+    </ul>
+    <h3>3. Astuces pour économiser</h3>
+    <ul>
+      <li>Comparer composants séparés vs PC préassemblé</li>
+      <li>Surveiller les promos et packs</li>
+      <li>Vérifier la compatibilité avant achat</li>
+    </ul>
+    <h3>4. Accessoires indispensables</h3>
+    <ul>
+      <li>Écran 144–180 Hz</li>
+      <li>Clavier et souris gamer</li>
+      <li>Casque léger pour jeu et streaming</li>
+    </ul>
+    <h3>Conclusion</h3>
+    <p>Avec ces conseils, tu peux assembler ou acheter un PC gamer performant pour 900 € sans te tromper. Pour aller plus loin, consulte nos guides sur <a href="#ecrans">les écrans</a> et <a href="#accessoires">les accessoires</a> pour compléter ton setup.</p>
+  </article>
+
+  <article id="article2">
+    <h2>Meilleurs écrans 144–180 Hz pour gaming</h2>
+    <p>Un bon écran est crucial pour profiter pleinement de ton PC gamer. Voici ce qu’il faut savoir pour choisir le bon modèle selon ton budget et ton jeu.</p>
+    <h3>1. Résolution et taux de rafraîchissement</h3>
+    <p>1080p pour les budgets limités, 1440p si possible. Priorise 144–180 Hz pour une fluidité maximale.</p>
+    <h3>2. Type de dalle</h3>
+    <p>IPS : couleurs et angles corrects, TN : réactivité, VA : contraste profond.</p>
+    <h3>3. Conseils pour économiser</h3>
+    <ul>
+      <li>Surveiller les promos sur Amazon ou LDLC</li>
+      <li>Privilégier les modèles sans fioritures mais fiables</li>
+    </ul>
+  </article>
+
+  <article id="article3">
+    <h2>Accessoires indispensables pour ton setup gaming</h2>
+    <p>Clavier, souris, casque : ces accessoires peuvent améliorer ton expérience sans exploser ton budget.</p>
+    <h3>1. Clavier et souris</h3>
+    <p>Privilégie un clavier mécanique pas cher et une souris ergonomique avec DPI réglable.</p>
+    <h3>2. Casque et confort</h3>
+    <p>Casque léger avec micro clair, idéal pour streaming et communication.</p>
+    <h3>3. Autres accessoires</h3>
+    <ul>
+      <li>Tapis de souris XL</li>
+      <li>Supports pour casque</li>
+      <li>Éclairage RGB minimal pour ambiance</li>
+    </ul>
+  </article>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 TechBudget — Site perso. Conseils indépendants.</p>
+    </div>
+  </footer>
+</body>
+</html>
